@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.LinearLayoutCompat
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Team A" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/tv_score_teamA"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="8dp"
+                android:text="0"
+                android:textSize="42sp" />
+
+            <android.support.v7.widget.AppCompatButton
+                style="@style/MyButton"
+                android:onClick="incrementTeamScores"
+                android:id="@+id/btn_teamA_point3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="+3 Points" />
+
+            <android.support.v7.widget.AppCompatButton
+                style="@style/MyButton"
+                android:onClick="incrementTeamScores"
+                android:id="@+id/btn_teamA_point2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="8dp"
+                android:text="+2 Points" />
+
+            <android.support.v7.widget.AppCompatButton
+                style="@style/MyButton"
+                android:onClick="incrementTeamScores"
+                android:id="@+id/btn_teamA_free"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Free Throw" />
+        </android.support.v7.widget.LinearLayoutCompat>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="16dp"
+            android:background="@android:color/darker_gray" />
+
+        <android.support.v7.widget.LinearLayoutCompat
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Team B"
+                 />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/tv_score_teamB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="8dp"
+                android:text="0"
+                android:textSize="42sp" />
+
+            <android.support.v7.widget.AppCompatButton
+                style="@style/MyButton"
+                android:onClick="incrementTeamScores"
+                android:id="@+id/btn_teamB_point3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="+3 Points" />
+
+            <android.support.v7.widget.AppCompatButton
+                style="@style/MyButton"
+                android:onClick="incrementTeamScores"
+                android:id="@+id/btn_teamB_point2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="8dp"
+                android:text="+2 Points" />
+
+            <android.support.v7.widget.AppCompatButton
+                style="@style/MyButton"
+                android:onClick="incrementTeamScores"
+                android:id="@+id/btn_teamB_free"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Free Throw" />
+        </android.support.v7.widget.LinearLayoutCompat>
+
+    </android.support.v7.widget.LinearLayoutCompat>
+
+    <android.support.v7.widget.AppCompatButton
+        style="@style/MyButton"
+        android:onClick="resetScore"
+        android:id="@+id/btn_reset"
+        android:layout_marginBottom="32dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="Reset" />
+
+</RelativeLayout>
