@@ -52,8 +52,8 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void display() {
-        AppCompatTextView scoreTeamA = (AppCompatTextView) findViewById(R.id.tv_score_teamA);
-        AppCompatTextView scoreTeamB = (AppCompatTextView) findViewById(R.id.tv_score_teamB);
+        AppCompatTextView scoreTeamA = findViewById(R.id.tv_score_teamA);
+        AppCompatTextView scoreTeamB = findViewById(R.id.tv_score_teamB);
 
         scoreTeamA.setText("" + this.scoreTeamA);
         scoreTeamB.setText("" + this.scoreTeamB);
